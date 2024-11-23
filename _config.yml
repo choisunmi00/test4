@@ -319,15 +319,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: # true
       comments: # true
       share: true
       related: true
       show_date: true
       toc: true
       toc_sticky: true
-      toc_icon: "fa-regular fa-circle"
+      toc_icon: "fa-solid fa-bars"
       toc_label: Contents
-      toc_depth: 1
 
 date_format: "%Y-%m-%d"
