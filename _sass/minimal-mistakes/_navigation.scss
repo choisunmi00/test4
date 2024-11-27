@@ -96,7 +96,7 @@
       &.current,
       &.current.disabled {
         color: #fff;
-        background: #000;
+        background: $primary-color;
       }
 
       &.disabled {
