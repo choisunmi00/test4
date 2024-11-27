@@ -53,8 +53,10 @@
 
 .pagination {
   @include clearfix();
+  display: flex;
   float: inline-start;
   justify-content: space-between;
+  align-items: center;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
