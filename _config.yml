@@ -319,7 +319,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: # true
+      read_time: true
       comments: # true
       share: true
       related: true
@@ -328,5 +328,7 @@ defaults:
       toc_sticky: true
       toc_icon: "fa-solid fa-bars"
       toc_label: Contents
+      sidebar:
+        nav: "counts"
 
 date_format: "%Y-%m-%d"
