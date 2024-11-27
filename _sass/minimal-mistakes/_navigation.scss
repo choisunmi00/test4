@@ -54,6 +54,7 @@
 .pagination {
   @include clearfix();
   float: inline-start;
+  justify-content: space-between;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
@@ -123,7 +124,6 @@
     display: block;
     padding: 1em 2em;
     float: inline-start;
-    justify-content: space-between;
     width: 20%;
     font-family: $sans-serif;
     font-size: $type-size-5;
