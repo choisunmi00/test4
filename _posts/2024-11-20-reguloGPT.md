@@ -41,7 +41,7 @@ tags: paper
 - 현재는 어떤가  
   현재로서는 NLP를 통해 복잡한 MRP를 매핑하기에는 부적절하다.
   
-  ![Fig. 1.](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0001.jpg)  
+  <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0001.jpg" width="50%" height="50%"/>  
 
   METTLL3가 위암의 진행을 조절하는 메커니즘을 전체적으로 설명
   MRP를 위해 이러한 그래프를 얻기 위해서는 기존 NLP, 컨텍스트 식별, NER(Named Entity Recignition), N항 RE(N-ary Relationship Extraction) 필요.
@@ -63,13 +63,13 @@ tags: paper
 
 - reguloGPT: end-to-end 추출 위해 GPT-4 기반 ICL 활용. 6개의 모듈을 포함한다.  
 
-  ![Fig. 2.](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0002.jpg)  
+  <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0002.jpg" width="50%" height="50%"/>   
 
   PubMed에서 컨텍스트 인식 KG를 구축하기 쉽도록 reguloGPT를 설계
 
 **A. reguloGPT에 대한 ICL 프롬프트**
 
-   ![Fig. 3.](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0003.jpg)  
+   <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0003.jpg" width="70%" height="70%"/>  
    
 - 기준 프롬프트 (A): 지침, 정의 및 출력 형식을 포함한 기준 프롬프트  
   1__ 작업 목표 제시  
@@ -126,7 +126,7 @@ tags: paper
   수동 주석 작업을 자동화하기 위해 LLM 사용.  
   프레임워크 GPT-4-evaluation 제안.  
   
-    ![Fig. 4.](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0004.jpg)   
+    <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0004.jpg" width="50%" height="50%"/>  
 
     평가를 위한 G-Eval 프롬프트 / A: 컨텍스트 평가, B: 그래프 평가  
 
@@ -186,7 +186,7 @@ tags: paper
 
 - 다양한 범주 node의 outdegree-rate
 
-  ![Fig. 5.](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0005.jpg)
+  <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0005.jpg" width="50%" height="50%"/>  
 
   m<sup>6</sup>A와 WERs(Writers, Erasers, Readers)는 핵심 조절자.  
   GO/pathwat node는 하류 조절자.   
