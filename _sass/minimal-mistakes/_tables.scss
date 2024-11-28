@@ -10,6 +10,8 @@ table {
   font-size: 1em;
   border-collapse: collapse;
   overflow-x: auto;
+  word-break: normal;
+  overflow-wrap: break-word;
 
   & + table {
     margin-top: 1em;
@@ -36,4 +38,6 @@ tr,
 td,
 th {
   vertical-align: middle;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
