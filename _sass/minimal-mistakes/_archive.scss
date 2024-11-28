@@ -51,8 +51,6 @@
   text-overflow: ellipsis;
   font-weight: normal;
 
-  
-
   a[rel="permalink"]::before {
     content: '';
     position: absolute;
@@ -61,8 +59,11 @@
 
   a + a {
     opacity: 0.5;
-    text-decoration: none;
   }
+}
+
+.archive__item-title a {
+  text-decoration: none; /* 기본 밑줄 제거 */
 }
 
 /* remove border*/
