@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 # Site Settings
 locale                   : "en"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "CSM Blog"
+title                    : "CheongSeolMo"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Choi Sunmi"
+name                     : "Chung seolmo"
 description              : "CSM's git Blog"
 url                      : "https://choisunmi00.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
