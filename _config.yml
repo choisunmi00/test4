@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 # Site Settings
 locale                   : "en"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "CSM Blog"
+title                    : "CheongSeolMo"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Choi Sunmi"
+name                     : "Cheong seolmo"
 description              : "CSM's git Blog"
 url                      : "https://choisunmi00.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -210,6 +210,7 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
@@ -231,7 +232,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
-paginate: 5 # amount of posts to show
+paginate: 6 # amount of posts to show
 paginate_path: /page:num/
 
 # Pagination with jekyll-paginate-v2

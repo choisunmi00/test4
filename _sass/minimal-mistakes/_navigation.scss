@@ -55,7 +55,7 @@
   @include clearfix();
   display: flex;
   float: inline-start;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 1em;
   padding-top: 1em;
@@ -86,7 +86,7 @@
       text-align: center;
       text-decoration: none;
       color: $muted-text-color;
-      border: 1px solid mix(#000, $border-color, 25%);
+      // border: 1px solid mix(#000, $border-color, 25%);
       border-radius: 0;
 
       &:hover {
@@ -131,7 +131,7 @@
     width: 50%;
     font-family: $sans-serif;
     font-size: $type-size-3;
-    font-weight: bold;
+    // font-weight: bold;
     text-align: center;
     text-decoration: none;
     color: #000;
