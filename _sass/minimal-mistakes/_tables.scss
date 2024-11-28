@@ -10,7 +10,7 @@ table {
   font-size: 1em;
   border-collapse: collapse;
   overflow-x: auto;
-  word-break: normal;
+  word-break: keep-all;
   overflow-wrap: break-word;
 
   & + table {
@@ -38,6 +38,6 @@ tr,
 td,
 th {
   vertical-align: middle;
-  word-break: normal;
+  word-break: keep-all;
   overflow-wrap: break-word;
 }
