@@ -66,6 +66,10 @@
   text-decoration: none;
 }
 
+.archive__item-title a:hover {
+  text-decoration: underline;
+}
+
 /* remove border*/
 .page__content {
   .archive__item-title {
