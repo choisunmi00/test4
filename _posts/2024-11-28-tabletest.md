@@ -1,6 +1,6 @@
 ---
 layout: single
-title: test
+title: tabletest
 ---
 
 | Header 1       | Header 2       | Header 3       |
