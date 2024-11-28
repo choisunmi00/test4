@@ -50,11 +50,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: normal;
+  text-decoration: none;
 
   a[rel="permalink"]::before {
     content: '';
     position: absolute;
-    text-decoration: none;
     inset: 0;
   }
 
