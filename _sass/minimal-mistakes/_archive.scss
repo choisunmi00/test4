@@ -50,7 +50,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: normal;
-  text-decoration: none;
+
+  
 
   a[rel="permalink"]::before {
     content: '';
@@ -60,6 +61,7 @@
 
   a + a {
     opacity: 0.5;
+    text-decoration: none;
   }
 }
 
