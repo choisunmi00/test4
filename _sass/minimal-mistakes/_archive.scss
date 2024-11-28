@@ -54,6 +54,7 @@
   a[rel="permalink"]::before {
     content: '';
     position: absolute;
+    text-decoration: none;
     inset: 0;
   }
 
