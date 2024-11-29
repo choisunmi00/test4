@@ -26,7 +26,7 @@ url                      : "https://choisunmi00.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/walnutYcircle.png"
+logo                     : "/assets/images/walnutBcircle.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -121,10 +121,10 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:keunangyung01@naver.com"
     - label: "Blog"
-      icon: "/assets/images/walnutYcircle.png"
-      url: "https://choisunmi00.github.io/"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -319,7 +319,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: # true
       comments: # true
       share: true
@@ -331,6 +331,6 @@ defaults:
       toc_label: Contents
       sidebar:
         nav: "counts"
-      athor_profile: false
+      
 
 date_format: "%Y-%m-%d"
