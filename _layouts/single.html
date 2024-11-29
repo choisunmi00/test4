@@ -61,7 +61,7 @@ layout: default
       </footer>
 
       <div class="category-list">
-        <h3>More posts in "{{ page.categories | first }}"</h3>
+        <h3>{{ page.categories | first }}의 다른 글</h3>
         <ul>
           {% assign current_category = page.categories | first %}
           {% for post in site.posts %}
