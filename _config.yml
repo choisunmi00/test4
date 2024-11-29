@@ -19,7 +19,7 @@ locale                   : "en"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "CHEONG_SEOLMO"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "CSM's git Blog"
 name                     : "Cheong seolmo"
 description              : "CSM's git Blog"
 url                      : "https://choisunmi00.github.io"
