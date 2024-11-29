@@ -32,3 +32,26 @@
     color: $link-color-hover;
   }
   
+  .category-list table {
+    margin: 0 auto; /* 표를 페이지 중앙에 배치 */
+    border-collapse: collapse; /* 테이블 경계를 합치기 */
+    width: 80%; /* 테이블 너비 */
+    max-width: 800px; /* 최대 너비 */
+  }
+  
+  .category-list th,
+  .category-list td {
+    border: 1px solid #ddd; /* 셀 경계 */
+    padding: 8px; /* 셀 내부 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+  }
+  
+  .category-list th {
+    background-color: #f4f4f4; /* 헤더 배경색 */
+    font-weight: bold; /* 헤더 텍스트 굵게 */
+  }
+  
+  .category-list tr:nth-child(even) {
+    background-color: #f9f9f9; /* 짝수 행 배경색 */
+  }
+  
