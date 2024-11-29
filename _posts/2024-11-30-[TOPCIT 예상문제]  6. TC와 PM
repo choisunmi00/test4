@@ -1,0 +1,97 @@
+---
+layout: single
+title: >-
+  [TOPCIT 예상문제]  6. TC와 PM 
+categories: TOPCIT
+tags: quiz
+---
+
+# 06. 프로젝트 관리 및 테크니컬 커뮤니케이션
+
+[https://www.topcit.or.kr/upload/edubox/essence/ess_ko_06/index.html](https://www.topcit.or.kr/upload/edubox/essence/ess_ko_06/index.html)
+
+---
+## Q & A
+
+
+<span style="color:#2c86a5"> 1.</span> 창의적 사고기법 5가지   
+
+<span style="color:#2c86a5"> 2.</span> 논리적 사고기법 3가지    
+
+<span style="color:#2c86a5"> 3.</span> 어떤 프로젝트를 하는데 투입되는 인력 자원을 시간 단위로 표현한 것  
+
+<span style="color:#2c86a5"> 4.</span> 프로젝트 관리 프로세스 그룹 5가지(PMBOK)      
+
+<span style="color:#2c86a5"> 5.</span> 프로젝트 산출물을 중심으로 작업을 분류하고, 관리 가능한 범위로 분할한 계층적 작업 분류표        
+
+<span style="color:#2c86a5"> 5.1.</span> 5.의 하위 작업 항목   
+
+<span style="color:#2c86a5"> 5.2.</span> 5.의 구성 요소    
+
+<span style="color:#2c86a5"> 6.</span> 일정관리 프로세스 6단계    
+
+<span style="color:#2c86a5"> 7.</span> 활동 기간 산정 방법 중 위험을 고려한 일정 추정 기법. 경험이 많지 않은 경우에 사용    
+
+<span style="color:#2c86a5"> 7.1.</span> 7.의 수식  
+
+<span style="color:#2c86a5"> 8.</span> 획득가치 관리(EVM)의 성과 측정 3가지?    
+
+<span style="color:#2c86a5"> 9.</span> 일정성과지수, 원가 차이, 원가성과지수 수식   
+
+<span style="color:#2c86a5"> 10.</span> 품질 보증(QA) 개념   
+
+<span style="color:#2c86a5"> 11.</span> 품질 보증 기법 3가지   
+
+<span style="color:#2c86a5"> 12.</span> 품질 통제(QC) 개념   
+
+<span style="color:#2c86a5"> 13.</span> 품질 통제 기법 4가지   
+
+<span style="color:#2c86a5"> 14.</span> 국제 표준화 기국에서 제정한 소프트웨어 제품품질 평가를 위한 소프트웨어 품질 평가 통합 모델   
+
+<span style="color:#2c86a5"> 14.1.</span> 14.의 구성 5가지   
+
+<span style="color:#2c86a5"> 15.</span> 위험관리 프로세스에서 부정적인 위험 대응 방법 4가지   
+
+<span style="color:#2c86a5"> 16.</span> 위험관리 프로세스에서 긍정적인 위험 대응 방법 4가지   
+
+## A & Q
+
+<span style="color:#2c86a5"> 1.</span> 브레인 스토밍, 여섯 가지 생각모자, 스캠퍼 기법, TRIZ, 랜덤 워드   
+
+<span style="color:#2c86a5"> 2.</span> 조직 트리, 80 : 20, MECE    
+
+<span style="color:#2c86a5"> 3.</span> MM(Man-Month)  
+
+<span style="color:#2c86a5"> 4.</span> 착수 프로세스, 계획 프로세스, 실행 프로세스, 감시 및 통제 프로세스, 종료 프로세스      
+
+<span style="color:#2c86a5"> 5.</span> WBS(작업 분류 체계)        
+
+<span style="color:#2c86a5"> 5.1.</span> 작업 패키지   
+
+<span style="color:#2c86a5"> 5.2.</span> 작업 패키지, 식별 번호, WBS 사전, RAM    
+
+<span style="color:#2c86a5"> 6.</span> 일정관리 계획수립 - 활동 정의 - 활동 순서 배열 - 활동 시간 산정 - 일정 개발 - 일정 통제      
+
+<span style="color:#2c86a5"> 7.</span> 3점 산정(PERT)    
+
+<span style="color:#2c86a5"> 7.1.</span> (비관치 + 4*최빈치 + 낙관치) / 6  
+
+<span style="color:#2c86a5"> 8.</span> EV: 획득 가치, PV: 계획 가치, AC: 실제 원가    
+
+<span style="color:#2c86a5"> 9.</span> SPI = EV/PV, CV = EV-AC, CPI = EV/AC   
+
+<span style="color:#2c86a5"> 10.</span> 품질 요구사항과 품질통제의 측정 결과를 감시하면서 해당하는 품질 표준을 적용하고 있는지 확인하는 기법 및 활동   
+
+<span style="color:#2c86a5"> 11.</span> 기술 검토, 소프트웨어 검사, 워크 스루   
+
+<span style="color:#2c86a5"> 12.</span> 품질목표를 달성하기 위해 품질활동 수행결과를 기록하고 감시하는 활동 및 절차     
+
+<span style="color:#2c86a5"> 13.</span> 파레토차트, 인과관계도, 관리도, 산점도   
+
+<span style="color:#2c86a5"> 14.</span> ISO 25000   
+
+<span style="color:#2c86a5"> 14.1.</span> 소프트웨어 모델, 소프트웨어 품질 관리, 소프트웨어 품질 평가, 소프트웨어 품질 측정, 소프트웨어 품질 요구사항   
+
+<span style="color:#2c86a5"> 15.</span> 회피, 전가, 완화, 수용   
+
+<span style="color:#2c86a5"> 16.</span> 활용, 분담, 증대, 수용   
