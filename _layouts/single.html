@@ -59,7 +59,20 @@ layout: default
         {% include page__taxonomy.html %}
         {% include page__date.html %}
       </footer>
-
+      <div class="category-list">
+        <h3>More posts in "{{ page.categories | first }}"</h3>
+        <ul>
+          {% assign current_category = page.categories | first %}
+          {% for post in site.posts %}
+            {% if post.categories contains current_category and post.url != page.url %}
+              <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
