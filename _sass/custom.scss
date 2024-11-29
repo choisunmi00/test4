@@ -1,0 +1,29 @@
+.category-list {
+    margin-top: 2rem;
+  }
+  
+  .category-list h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .category-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .category-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .category-list a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .category-list a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
