@@ -19,11 +19,11 @@
   
   .category-list a {
     text-decoration: none;
-    color: #007bff;
+    color: $link-color;
   }
   
   .category-list a:hover {
     text-decoration: underline;
-    color: #0056b3;
+    color: $link-color-hover;
   }
   
