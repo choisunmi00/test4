@@ -17,16 +17,16 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 # Site Settings
 locale                   : "en"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "CheongSeolMo"
+title                    : "CHEONG_SEOLMO"
 title_separator          : "|"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "CSM's Gitblog"
 name                     : "Cheong seolmo"
-description              : "CSM's git Blog"
+description              : "CSM's Gitblog"
 url                      : "https://choisunmi00.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/walnutBcircle.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -113,15 +113,15 @@ analytics:
 
 # Site Author
 author:
-  name             : # "Choi Sunmi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : # "I am an **amazing** person."
+  name             : "Cheong seolmo"
+  avatar           : "/assets/images/winter.gif"
+  bio              : "연구, 공부, 취미 올리는 깃블로그"
   location         : # "Somewhere"
   email            : # "ebebeb@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:keunangyung01@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -133,7 +133,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/choisunmi00"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -232,7 +232,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Pagination with jekyll-paginate
-paginate: 6 # amount of posts to show
+paginate: 8 # amount of posts to show
 paginate_path: /page:num/
 
 # Pagination with jekyll-paginate-v2
@@ -319,7 +319,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: # true
       comments: # true
       share: true
@@ -331,5 +331,6 @@ defaults:
       toc_label: Contents
       sidebar:
         nav: "counts"
+      
 
 date_format: "%Y-%m-%d"

@@ -1,0 +1,54 @@
+.category-list {
+    margin-top: 2rem;
+    text-align: center; /* 중앙 정렬 */
+    margin: 0 auto; /* 중앙으로 배치 */
+    max-width: 800px; /* 목록의 최대 너비 제한 */
+  }
+  
+  .category-list h3 {
+    font-size: 15.4px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .category-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .category-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .category-list a {
+    text-decoration: none;
+    color: $link-color;
+  }
+  
+  .category-list a:hover {
+    text-decoration: underline;
+    color: $link-color-hover;
+  }
+  
+  .category-list table {
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    width: 300%; 
+    max-width: 800px; 
+    border-radius: 10px;
+  }
+  
+  .category-list th,
+  .category-list td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+  }
+  
+  .category-list th {
+    background-color: #f4f4f4; 
+    font-weight: bold; 
+  }
+  
