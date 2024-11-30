@@ -20,7 +20,7 @@
   
  .category-list li {
    font-size: 13px;
-   margin-bottom: 0;
+   margin-bottom: 0.5rem;
    border: 1px solid #ddd; 
    padding: 8px; 
   //  border-radius: 4px;
@@ -52,8 +52,8 @@
 
 #pagination-controls {
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+  justify-content: left;
+  margin-top: 0.5rem;
 }
 
 #pagination-controls button {
@@ -64,6 +64,7 @@
   margin: 0 4px;
   border-radius: 4px;
   cursor: pointer;
+  height: 40px;
 }
 
 #pagination-controls button:disabled {
