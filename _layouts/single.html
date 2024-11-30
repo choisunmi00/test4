@@ -64,7 +64,7 @@ layout: default
         {% assign category_posts = site.posts | where: "categories", current_category %}
 
         {% if category_posts.size > 1 %}
-       <div class="category-list">
+       <!-- <div class="category-list">
         <h3>{{ page.categories | first }}의 다른 글</h3>
         <ul>
           {% assign current_category = page.categories | first %}
@@ -76,8 +76,29 @@ layout: default
             {% endif %}
           {% endfor %}
         </ul>
-      </div>
+      </div> -->
+        <div class="category-list">
+          <h3>"{{ page.categories | first }}" 카테고리의 글 목록</h3>
+          <ul id="paginated-list">
+            {% assign current_category = page.categories | first %}
+            {% for post in site.posts %}
+              {% if post.categories contains current_category and post.url != page.url %}
+                <li>
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        
+          <div id="pagination-controls">
+            <button id="prev-button" disabled>이전</button>
+            <button id="next-button">다음</button>
+          </div>
+        </div>
+      
         {% endif %}
+
+        
 
         <div id="pagination-controls">
           <button id="prev-button" disabled>이전</button>
