@@ -84,15 +84,19 @@ layout: default
             {% for post in site.posts %}
               {% if post.categories contains current_category and post.url != page.url %}
                 <li>
-                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                  <a href="{{ post.url | relative_url }}"{{ post.title }}</a>
                 </li>
               {% endif %}
             {% endfor %}
           </ul>
         
           <div id="pagination-controls">
-            <button id="prev-button" disabled><</button>
-            <button id="next-button">></button>
+            <button id="prev-button" disabled>
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-button">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
         </div>
       
