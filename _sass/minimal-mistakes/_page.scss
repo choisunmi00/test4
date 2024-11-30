@@ -337,10 +337,11 @@ body {
   display: inline-block;
   margin-inline-end: 5px;
   margin-bottom: 8px;
-  padding: 2px 2px; 
+  padding: 0px 10px; 
   text-decoration: none;
   border: 1px solid; 
-  border-radius: $border-radius;
+  border-radius: 20px;
+  border-color: #ddd;
 
   &:hover {
     text-decoration: none;

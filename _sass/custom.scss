@@ -54,13 +54,11 @@
 }
 
 #pagination-controls {
-  position: absolute; /* 절대 위치로 설정 */
-  bottom: 50px; /* 페이지 하단에서의 위치 */
-  left: 50%; /* 중앙 정렬 */
-  transform: translateX(-50%); /* 가운데 정렬 */
-  text-align: center; /* 버튼 중앙 정렬 */
-  width: 100%; /* 버튼 컨테이너의 너비 */
-  height: 20px; /* 고정 높이 */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  height: 0px;
 }
 
 #pagination-controls button {
