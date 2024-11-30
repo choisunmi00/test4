@@ -16,13 +16,15 @@
   .category-list ul {
     list-style: none;
     padding: 0;
+    height: clac(5*20px);
   }
   
  .category-list li {
    font-size: 14px;
-   margin-bottom: 0rem;
+   margin-bottom: 0;
    border: 1px solid #ddd; 
    padding: 8px; 
+   height: 20;
   //  border-radius: 4px;
 }
   
@@ -52,9 +54,11 @@
 }
 
 #pagination-controls {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  height: 50px;
 }
 
 #pagination-controls button {
