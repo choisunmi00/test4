@@ -78,7 +78,7 @@ layout: default
         </ul>
       </div> -->
         <div class="category-list">
-          <h3>"{{ page.categories | first }}" 카테고리의 글 목록</h3>
+          <h3>{{ page.categories | first }}의 다른 글</h3>
           <ul id="paginated-list">
             {% assign current_category = page.categories | first %}
             {% for post in site.posts %}
@@ -91,22 +91,13 @@ layout: default
           </ul>
         
           <div id="pagination-controls">
-            <button id="prev-button" disabled>이전</button>
-            <button id="next-button">다음</button>
+            <button id="prev-button" disabled>></button>
+            <button id="next-button"><</button>
           </div>
         </div>
       
         {% endif %}
 
-        
-
-        <div id="pagination-controls">
-          <button id="prev-button" disabled>이전</button>
-          <button id="next-button">다음</button>
-        </div>
-      </div>
-
-      
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       <!-- {% include post_pagination.html %} -->
