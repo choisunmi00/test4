@@ -60,7 +60,11 @@ layout: default
         {% include page__date.html %}
       </footer>
 
-      <!-- <div class="category-list">
+        {% assign current_category = page.categories | first %}
+        {% assign category_posts = site.posts | where: "categories", current_category %}
+
+        {% if category_posts.size > 1 %}
+       <!-- <div class="category-list">
         <h3>{{ page.categories | first }}의 다른 글</h3>
         <ul>
           {% assign current_category = page.categories | first %}
@@ -73,34 +77,31 @@ layout: default
           {% endfor %}
         </ul>
       </div> -->
-
-        {% assign current_category = page.categories | first %}
-        {% assign category_posts = site.posts | where: "categories", current_category %}
-
-        {% if category_posts.size > 1 %}
         <div class="category-list">
-          <!-- <h3>{{ current_category }}의 다른 글</h3> -->
-          <table>
-            <thead>
-              <tr>
-                <th>{{ current_category }}의 다른 글</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for post in category_posts %}
-                {% if post.url != page.url %}
-                  <tr>
-                    <td>{{ post.title }}</td>
-                    <td><a href="{{ post.url | relative_url }}">바로가기</a></td>
-                  </tr>
-                {% endif %}
-              {% endfor %}
-            </tbody>
-          </table>
+          <h3>'{{ page.categories | first }}'의 다른 글</h3>
+          <ul id="paginated-list">
+            {% assign current_category = page.categories | first %}
+            {% for post in site.posts %}
+              {% if post.categories contains current_category and post.url != page.url %}
+                <li>
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        
+          <div id="pagination-controls">
+            <button id="prev-button" disabled><
+              <!-- <i class="fas fa-chevron-left"></i> -->
+            </button>
+            <button id="next-button">>
+              <!-- <i class="fas fa-chevron-right"></i> -->
+            </button>
+          </div>
         </div>
+      
         {% endif %}
 
-      
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       <!-- {% include post_pagination.html %} -->

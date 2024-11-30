@@ -1,16 +1,17 @@
-.category-list {
+  .category-list {
     margin-top: 2rem;
-    text-align: center; /* 중앙 정렬 */
-    margin: 0 auto; /* 중앙으로 배치 */
-    max-width: 800px; /* 목록의 최대 너비 제한 */
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 400px; 
   }
   
   .category-list h3 {
     font-size: 15.4px;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     display: inline-block;
     text-align: left;
+    border-bottom: 1.5px solid #1d2228;
   }
   
   .category-list ul {
@@ -18,37 +19,55 @@
     padding: 0;
   }
   
-  .category-list li {
-    margin-bottom: 0.5rem;
-  }
+ .category-list li {
+   font-size: 13px;
+   text-align: left;
+   margin-bottom: 0rem;
+   border: none;
+   padding: 5.5px; 
+  //  border-radius: 4px;
+   border-bottom: 1px solid #ddd;
+}
   
   .category-list a {
     text-decoration: none;
-    color: $link-color;
+    color: #4a6169;
   }
   
   .category-list a:hover {
     text-decoration: underline;
     color: $link-color-hover;
-  }
-  
-  .category-list table {
-    margin: 0 auto; 
-    border-collapse: collapse; 
-    width: 300%; 
-    max-width: 800px; 
-    border-radius: 10px;
-  }
-  
-  .category-list th,
-  .category-list td {
-    border: 1px solid #ddd; 
-    padding: 8px; 
-    text-align: left; 
-  }
-  
-  .category-list th {
-    background-color: #f4f4f4; 
-    font-weight: bold; 
-  }
-  
+  } 
+
+#paginated-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#paginated-list li {
+  display: none;
+}
+
+#pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+#pagination-controls button {
+  background-color: #1d2228;
+  margin-top: 0.2rem;
+  color: white;
+  border: none;
+  padding: 3px 16px;
+  margin: 0 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#pagination-controls button:disabled {
+  background-color: #ddd;
+  cursor: default;
+}
