@@ -60,7 +60,11 @@ layout: default
         {% include page__date.html %}
       </footer>
 
-      <!-- <div class="category-list">
+        {% assign current_category = page.categories | first %}
+        {% assign category_posts = site.posts | where: "categories", current_category %}
+
+        {% if category_posts.size > 1 %}
+       <div class="category-list">
         <h3>{{ page.categories | first }}의 다른 글</h3>
         <ul>
           {% assign current_category = page.categories | first %}
@@ -72,32 +76,7 @@ layout: default
             {% endif %}
           {% endfor %}
         </ul>
-      </div> -->
-
-        {% assign current_category = page.categories | first %}
-        {% assign category_posts = site.posts | where: "categories", current_category %}
-
-        {% if category_posts.size > 1 %}
-        <div class="category-list">
-          <!-- <h3>{{ current_category }}의 다른 글</h3> -->
-          <table>
-            <thead>
-              <tr>
-                <th>{{ current_category }}의 다른 글</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for post in category_posts %}
-                {% if post.url != page.url %}
-                  <tr>
-                    <td>{{ post.title }}</td>
-                    <td><a href="{{ post.url | relative_url }}">바로가기</a></td>
-                  </tr>
-                {% endif %}
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
+      </div>
         {% endif %}
 
       

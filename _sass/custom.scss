@@ -31,24 +31,3 @@
     text-decoration: underline;
     color: $link-color-hover;
   }
-  
-  .category-list table {
-    margin: 0 auto; 
-    border-collapse: collapse; 
-    width: 300%; 
-    max-width: 800px; 
-    border-radius: 10px;
-  }
-  
-  .category-list th,
-  .category-list td {
-    border: 1px solid #ddd; 
-    padding: 8px; 
-    text-align: left; 
-  }
-  
-  .category-list th {
-    background-color: #f4f4f4; 
-    font-weight: bold; 
-  }
-  
