@@ -19,7 +19,7 @@ tags: paper
 - ICL: in-context learning.
 - outdegree: 방향성 그래프에서 node로부터 시작하는 고유한 edge.
 
-## 0. Abstract
+## Abstract
 
 - Motivation: MRP에 대한 KG 구축이 현재로선 미미하다.
 - Results: reguloGPT의 문헌에서 생물학적 지식 추출 가능성  
