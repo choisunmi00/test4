@@ -11,7 +11,7 @@
     </div>
   {% endif %} -->
   {% if author.avatar %}
-    <div class="author__avatar">
+    <!-- <div class="author__avatar">
       <img 
         src="{{ author.avatar | relative_url }}" 
         alt="{{ author.name }}" 
@@ -22,6 +22,10 @@
     <div id="imageModal" class="modal" onclick="closeModal()">
       <span class="close">&times;</span>
       <img class="modal-content" id="modalImage">
+    </div> -->
+
+    <div class="modal">
+      <div class="modalBox"></div>
     </div>
   {% endif %}
 
