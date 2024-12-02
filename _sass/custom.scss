@@ -83,17 +83,22 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 .modalBox {
   position: relative;
   text-align: center;
-  top : 15%;
-  left : 30%;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50%;
-  max-height: 50%;
-  position : sticky;
+  max-height: 80%;
+  overflow: hidden;
 }
-span img:hover{
+
+.author__avatar img:hover {
   cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
+
 /* image modal end */
 
