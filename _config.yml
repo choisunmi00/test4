@@ -210,7 +210,7 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  syntax_highlighter: none
   hard_wrap: true
   auto_ids: true
   footnote_nr: 1
