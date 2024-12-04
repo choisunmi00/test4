@@ -211,7 +211,7 @@ incremental: false
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  hard_wrap: false
+  hard_wrap: true
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
