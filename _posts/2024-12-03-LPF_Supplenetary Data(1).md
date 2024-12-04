@@ -1,6 +1,6 @@
 ---
 layout: single
-title: LPF(Supplenetary Data)(1)
+title: LPF_Supplenetary Data(1)
 categories: LPF
 tags: paper
 ---
@@ -42,7 +42,7 @@ tags: paper
  
 <img src="https://github.com/user-attachments/assets/ddd9ae3b-c612-443a-b163-93067ec55bd7" width="60%" height="60%"/> 
 
-- os.makedirs: output directory 경로 정의. timestamp 기반 생성
+- ```os.makedirs```: output directory 경로 정의. timestamp 기반 생성
 
 - ``u0``, ``v0``: initial values
 - ``Du``, ``Dv``: diffusion parameters   
