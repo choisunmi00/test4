@@ -52,26 +52,31 @@ tags: paper
 - 모델 파일(JSON 형식)을 불러와 사전 정의된 모델 설정 가능
 
 **2.1.2**  Creating an initializer   
-- 초기화 프로그램 생성
+- 초기화 프로그램 생성  
+
 ```python
 from lpf.initializers import LiawInitializer
 
 initializer = LiawInitializer()
 initializer.update(model_dicts)
 params = LiawModel.parse_params(model_dicts)
-```
-- 초기화 클래스 제공  
-- ``LiawInitializer``: 2D공간에서 사용자 정의 위치에 대해서만 $u$를 $u_0$으로 초기화, 모든 $v$를 $v_0$으로 초기화  
+```  
+
+- 초기화 클래스 제공   
+- ``LiawInitializer``: 2D공간에서 사용자 정의 위치에 대해서만 $u$를 $u_0$으로 초기화, 모든 $v$를 $v_0$으로 초기화   
 - ``TwoComponentConstantInitializer``: 2D 공간에서 $u$와 $v$의 모든 점에 $u_0$, $v_0$을 할당   
 
 **2.1.3**  Creating an array of parameters sets   
-- 매개변수 집합의 배열 생성   
+- 매개변수 집합의 배열 생성
+
 ```python
 from lpf.models import LiawModel
 
 params = LiawModel.parse_params(model_dicts)
 ```
-- parse_params 정의   
+
+- parse_params 정의
+
 ```python
 import numpy as np
 from lpf.models import TwoComponentModel
@@ -98,12 +103,13 @@ class LiawModel(TwoComponentModel):
 
 		return params
 ```
-- ```LiawModel```: 변수 값들을 분석, 넘파이 배열 생성.  
-- ```parmas```: ```LiawModel```에서 반환된 값  
-- ```parse_params```: ```LiawModel```에서 static method로, 분석하지 않고 배열 생성 가능  
 
-**2.1.4**  Creating a PDE model    
-- LPF에 정의된 PDE model  
+- ```LiawModel```: 변수 값들을 분석, 넘파이 배열 생성.   
+- ```parmas```: ```LiawModel```에서 반환된 값   
+- ```parse_params```: ```LiawModel```에서 static method로, 분석하지 않고 배열 생성 가능   
+
+**2.1.4**  Creating a PDE model       
+- LPF에 정의된 PDE model   
 
 |        Model        |        Class        |     Reactions     |     Parameters     |
 |:-------------------:|:-------------------:|:-----------------:|:------------------:|
@@ -113,6 +119,7 @@ class LiawModel(TwoComponentModel):
 | Gray-Scott          | ```SchnakenbergModel```   |     $f(u, v) = \sigma_u - \mu u + \rho_u^2 v$ <br> $g(u, v) = \sigma_v - \rho_u^2 v$     |   $σ_v$: ``sv``, $σ_u$: ``su``, $ρ$: ``rho``, $µ$: ``mu``      |  
 
 - custom PDE model class
+
 ```python
 from lpf.models import TwoComponentModel
 
@@ -147,11 +154,12 @@ class MyModel(TwoComponentModel):
 		"""The length of the decision vector in EvoSearch.
 		"""
 		return 0
-```
+```   
 
 - ```__init__```, ```reactions```, ```to_dict```, ```parse_params```: ```TwoComponentModel``` model class에서 custom하기 위해 정의할 methods. ```reactions```에서 방정식이 정해진다.   
 - ```get_param_bounds```, ```len_decision_vector```: 원하는 진화 탐색 수행을 위해 정의할 methods   
-- Liaw model 생성   
+- Liaw model 생성
+
 ```python
 from lpf.models import LiawModel
 
@@ -164,9 +172,9 @@ model = LiawModel(
 	height=height,
 	device=device
 )
-```
+```   
 
-**2.1.5**  Performing a numerical simulation  
+**2.1.5**  Performing a numerical simulation   
 - LPF에 구현된 Numerical methods   
 
 | **Method**     | **Class** | **Definition**  |
@@ -175,11 +183,12 @@ model = LiawModel(
 | Heun           | `HeunSolver`       | $k_1 = h \cdot f(t, y_n)$ <br> $k_2 = h \cdot f(t + h, y_n + k_1)$ <br> $y_{n+1} = y_n + \frac{k_1 + k_2}{2}$                                                                                                                                                                                       
 | Runge-Kutta    | `RungeKuttaSolver` | $k_1 = h \cdot f(t, y_n)$ <br> $k_2 = h \cdot f(t + \frac{h}{2}, y_n + \frac{k_1}{2})$ <br> $k_3 = h \cdot f(t + \frac{h}{2}, y_n + \frac{k_2}{2})$ <br> $k_4 = h \cdot f(t + h, y_n + k_3)$ <br> $y_{n+1} = y_n + \frac{k_1 + 2k_2 + 2k_3 + k_4}{6}$  
 
-- Neumann boundary conditions of two-component model  
+- Neumann boundary conditions of two-component model   
 $\text{boundary} \left( \frac{\partial u}{\partial t} \right) = 0 \quad \rightarrow \quad u'(0:h-1,\, 0:w-1) = 0$ <br> $\text{boundary} \left( \frac{\partial v}{\partial t} \right) = 0 \quad \rightarrow\quad v'(0:h-1, \, 0:w-1) = 0$
 
 
-- Performing a numerical simulation  
+- Performing a numerical simulation
+
 ```python
 from lpf.solvers import EulerSolver
 
@@ -197,13 +206,15 @@ solver.solve(
 	verbose=1
 )
 ```
-- numerical solvers: 시간 매개변수를 이용해 모델에 대한 numerical simulation 수행. 이미지 및 파일들이 포함된 디렉토리를 경로에 출력.
-- `dpath_pattern`: 2D 패턴 이미지
-- `dpath_ladybird`: 무당벌레 형태 이미지
-- `dpath_model`: 모델 정보 파일
 
-**2.1.6**  Visualizing the results  
-- 무당벌레 형태, 패턴의 진화 시각화  
+- numerical solvers: 시간 매개변수를 이용해 모델에 대한 numerical simulation 수행. 이미지 및 파일들이 포함된 디렉토리를 경로에 출력.  
+- `dpath_pattern`: 2D 패턴 이미지  
+- `dpath_ladybird`: 무당벌레 형태 이미지  
+- `dpath_model`: 모델 정보 파일  
+
+**2.1.6**  Visualizing the results   
+- 무당벌레 형태, 패턴의 진화 시각화
+
 ```python
 from os.path import join as pjoin
 from lpf.visualization import merge_single_timeseries
@@ -234,18 +245,29 @@ img_ladybirds = merge_single_timeseries(
 
 img_ladybirds.save(pjoin(dpath_output, "output_ladybird.png"))
 ```
-- `merge_single_timeseries`: `infile_header`로 정의된 문자열로 시작하는 이미지 파일을 찾아 단일 이미지로 병합
-- `save`: 이미지 파일로 저장하는 method
 
-- 출력 디렉토리 구조  
-<OUTPUT_DIR>   
-├── model_1  
-│   ├── ladybird_000001.png  
-│   ├── pattern_000001.png  
-│   ├── ladybird_000002.png  
-│   ├── pattern_000002.png  
-│   ├── ladybird_000003.png  
-│   ├── pattern_000003.png  
-│   └── ...  
-└── models  
-    └── model_1.json  
+- `merge_single_timeseries`: `infile_header`로 정의된 문자열로 시작하는 이미지 파일을 찾아 단일 이미지로 병합  
+- `save`: 이미지 파일로 저장하는 method  
+
+- 출력 디렉토리 구조
+
+<OUTPUT_DIR>     
+├── model_1    
+│   ├── ladybird_000001.png     
+│   ├── pattern_000001.png   
+│   ├── ladybird_000002.png   
+│   ├── pattern_000002.png   
+│   ├── ladybird_000003.png   
+│   ├── pattern_000003.png    
+│   └── ...      
+└── models    
+    └── model_1.json
+
+### 2.2 GPU acceleration for a batch of parameter sets  
+- CPU 단일 코어에서 100개의 매개변수 집합 결과를 얻는 데 약 3-5시간  
+- CuPy를 사용하여 GPU 컴퓨팅  
+
+<img src="https://github.com/user-attachments/assets/b4facf60-e777-487b-805b-8f50631cd932" width="60%" height="60%"/>  
+
+- Euler-GPU 성능이 대체로 가장 좋으며, File I/O이 없어야 GPU 컴퓨팅의 의미가 있다.  
+
