@@ -131,7 +131,7 @@ F = c_1 \cdot S_{\text{MSE}} + c_2 \cdot S_{\text{CP}} + c_3 \cdot S_{\text{VGG1
 $$  
 
 - $S$: 유사도 점수, $c$: 계수  
-- $S_MSE$: MSE에 기반한 유사도 점수. 여러 대상 이미지에 대한 MSE의 평균  
+- $S_(MSE)$: MSE에 기반한 유사도 점수. 여러 대상 이미지에 대한 MSE의 평균  
 
 $$
 S_{\text{MSE}} = \frac{1}{m} \sum_{i=1}^{m} \text{MSE}(X, T(i))
@@ -146,7 +146,7 @@ $$
 
 - $X$: 형태 이미지, $T$: 타겟 이미지, $n$: 이미지의 픽셀 수  
 
-- SCP: 색상 비율에 기반한 유사도 점수. OpenCV의 ```inRange```를 사용해 비율 계산.  
+- $S_(CP)$: 색상 비율에 기반한 유사도 점수. OpenCV의 ```inRange```를 사용해 비율 계산.  
 
 $$
 pdf(x, \mu, \sigma) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}\right)^2}
@@ -158,7 +158,7 @@ $$
 
 - *pdf*: probability density function of normal distribution, CP: color proportion  
 
-- $S_VGG16$: VGG16 perceptual loss에 기반한 유사도 점수. VGG16 perceptual loss를 형태, 타겟 이미지 feature maps 사이의 LAE 혹은 L1 loss로 정의  
+- $S_(VGG16)$: VGG16 perceptual loss에 기반한 유사도 점수. VGG16 perceptual loss를 형태, 타겟 이미지 feature maps 사이의 LAE 혹은 L1 loss로 정의  
 
 $$
 S_{\text{VGG16}} = \frac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{4} \text{L1-loss} \left( \phi_j(X) - \phi_j(T(i)) \right),
