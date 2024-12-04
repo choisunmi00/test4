@@ -251,7 +251,7 @@ img_ladybirds.save(pjoin(dpath_output, "output_ladybird.png"))
 
 - 출력 디렉토리 구조
 
-<OUTPUT_DIR>     
+\<OUTPUT_DIR\>   
 ├── model_1    
 │   ├── ladybird_000001.png     
 │   ├── pattern_000001.png   
