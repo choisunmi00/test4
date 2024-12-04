@@ -12,6 +12,8 @@ table {
   overflow-x: auto;
   word-break: keep-all;
   overflow-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
 
   & + table {
     margin-top: 1em;
