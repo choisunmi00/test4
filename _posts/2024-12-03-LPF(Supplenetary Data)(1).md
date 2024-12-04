@@ -267,7 +267,7 @@ img_ladybirds.save(pjoin(dpath_output, "output_ladybird.png"))
 - CPU 단일 코어에서 100개의 매개변수 집합 결과를 얻는 데 약 3-5시간  
 - CuPy를 사용하여 GPU 컴퓨팅  
 
-<img src="https://github.com/user-attachments/assets/b4facf60-e777-487b-805b-8f50631cd932" width="60%" height="60%"/>  
+<img src="https://github.com/user-attachments/assets/b4facf60-e777-487b-805b-8f50631cd932" width="60%" height="60%"/>    
 
 - Euler-GPU 성능이 대체로 가장 좋으며, File I/O이 없어야 GPU 컴퓨팅의 의미가 있다.  
 
