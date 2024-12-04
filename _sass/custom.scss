@@ -102,13 +102,72 @@
 
 /* image modal end */
 
-// pre {
-//   background-color: #f8f8f8;
-//   padding: 10px;
-//   border-radius: 5px;
-//   overflow-x: auto;
-// }
+/* 코드 블록 기본 스타일 */
+pre {
+  background-color: #1e1e1e; /* 다크 배경 */
+  color: #d4d4d4; /* 기본 텍스트 색상 */
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Courier New", Courier, monospace;
+}
 
-// code {
-//   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-// }
+/* 코드 텍스트 스타일 */
+code {
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* 키워드 (def, return 등) */
+pre .keyword {
+  color: #569cd6; /* 파란색 */
+  font-weight: bold;
+}
+
+/* 문자열 */
+pre .string {
+  color: #ce9178; /* 주황색 */
+}
+
+/* 숫자 */
+pre .number {
+  color: #b5cea8; /* 연한 녹색 */
+}
+
+/* 주석 */
+pre .comment {
+  color: #6a9955; /* 녹색 */
+  font-style: italic;
+}
+
+/* 함수 이름 */
+pre .function {
+  color: #dcdcaa; /* 연한 노란색 */
+  font-weight: bold;
+}
+
+/* 클래스 이름 */
+pre .class {
+  color: #4ec9b0; /* 청록색 */
+  font-weight: bold;
+}
+
+/* 연산자 */
+pre .operator {
+  color: #d4d4d4; /* 기본 텍스트 색상 */
+}
+
+/* 변수 및 인자 */
+pre .variable {
+  color: #9cdcfe; /* 연한 파란색 */
+}
+
+/* 불리언, None 등 특별 값 */
+pre .constant {
+  color: #569cd6; /* 파란색 */
+  font-weight: bold;
+}
