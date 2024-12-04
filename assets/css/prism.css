@@ -1,29 +1,71 @@
-/* 코드 블록 배경 및 기본 텍스트 */
 code[class*=language-], pre[class*=language-] {
     color: #d4d4d4; /* 기본 텍스트 색상 */
-    background: #1e1e1e; /* 배경색 */
+    background: #1e1e1e; /* Dark+ 배경색 */
     text-shadow: none;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
     line-height: 1.5;
     tab-size: 4;
+    hyphens: none;
 }
 
-/* 키워드 (from, import 등) */
+/* 선택 시 배경색 */
+code[class*=language-] ::selection, code[class*=language-]::selection,
+pre[class*=language-] ::selection, pre[class*=language-]::selection {
+    text-shadow: none;
+    background: #264f78;
+}
+
+/* 프린트 환경 */
+@media print {
+    code[class*=language-], pre[class*=language-] {
+        text-shadow: none;
+    }
+}
+
+/* 코드 블록 스타일 */
+pre[class*=language-] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+/* 인라인 코드 스타일 */
+:not(pre) > code[class*=language-] {
+    padding: 0.1em;
+    border-radius: 3px;
+    white-space: normal;
+    background: #2d2d2d; /* 인라인 코드 배경 */
+}
+
+/* 주석 */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #6a9955; /* 녹색 */
+    font-style: italic;
+}
+
+/* 키워드 */
 .token.keyword {
     color: #569cd6; /* 파란색 */
     font-weight: bold;
 }
 
-/* 모듈 경로 및 속성 이름 (lpf.models) */
-.token.namespace {
-    color: #9cdcfe; /* 연한 파란색 */
-}
-
-/* 클래스 이름 (TwoComponentModel) */
-.token.class-name {
-    color: #4ec9b0; /* 청록색 */
-    font-weight: bold;
+/* 변수 및 속성 이름 */
+.token.property,
+.token.constant,
+.token.symbol,
+.token.boolean,
+.token.number {
+    color: #b5cea8; /* 연한 녹색 */
 }
 
 /* 문자열 */
@@ -31,31 +73,43 @@ code[class*=language-], pre[class*=language-] {
     color: #ce9178; /* 주황색 */
 }
 
-/* 숫자 */
-.token.number {
-    color: #b5cea8; /* 연한 녹색 */
-}
-
-/* 주석 */
-.token.comment {
-    color: #6a9955; /* 녹색 */
-    font-style: italic;
-}
-
-/* 연산자 (., =) */
-.token.operator {
+/* 연산자 */
+.token.operator,
+.token.entity {
     color: #d4d4d4; /* 기본 텍스트 색상 */
 }
 
-/* 함수 이름 */
+/* 함수 */
 .token.function {
     color: #dcdcaa; /* 연한 노란색 */
     font-weight: bold;
 }
 
-/* 강조된 영역 선택 색상 */
-code[class*=language-] ::selection, code[class*=language-]::selection,
-pre[class*=language-] ::selection, pre[class*=language-]::selection {
-    text-shadow: none;
-    background: #264f78; /* 파란색 강조 */
+/* 클래스 이름 */
+.token.class-name {
+    color: #4ec9b0; /* 청록색 */
+    font-weight: bold;
+}
+
+/* 태그 및 속성 */
+.token.tag,
+.token.selector,
+.token.attr-name {
+    color: #569cd6; /* 파란색 */
+}
+
+/* 중요 요소 (예: !important) */
+.token.important {
+    color: #c586c0; /* 연한 보라색 */
+    font-weight: bold;
+}
+
+/* 에러 또는 삭제된 코드 */
+.token.deleted {
+    color: #f44747; /* 빨간색 */
+}
+
+/* 추가된 코드 */
+.token.inserted {
+    color: #b5cea8; /* 연한 녹색 */
 }
