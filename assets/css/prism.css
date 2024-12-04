@@ -113,3 +113,7 @@ pre[class*=language-] {
 .token.inserted {
     color: #b5cea8; /* 연한 녹색 */
 }
+
+.token.punctuation {
+    color: #ffd900; 
+}
