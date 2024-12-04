@@ -7,6 +7,11 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <link href="_sass/prism.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    
     <script src="/assets/js/custom.js"></script>
     <script>
       MathJax = {
@@ -20,11 +25,6 @@
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
     <script src="{{ '/assets/js/pagination.js' | relative_url }}"></script>
-
-    <link href="_sass/prism.css" rel="stylesheet" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 
   </head>
 
