@@ -71,3 +71,102 @@
   background-color: #ddd;
   cursor: default;
 }
+
+/* image modal */
+.modal {
+  display: none;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalBox {
+  position: relative;
+  text-align: center;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  max-height: 80%;
+  overflow: hidden;
+}
+
+.author__avatar img:hover {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+/* image modal end */
+
+/* 코드 블록 기본 스타일 */
+/* Dark+ 배경 및 기본 텍스트 */
+// pre {
+//   background-color: #1E1E1E; /* 배경색 */
+//   color: #D4D4D4; /* 기본 텍스트 색상 */
+//   padding: 15px;
+//   border-radius: 8px;
+//   overflow-x: auto;
+//   font-size: 14px;
+//   line-height: 1.6;
+//   font-family: "Consolas", "Courier New", monospace;
+// }
+
+// /* 키워드 (def, return 등) */
+// pre .keyword {
+//   color: #569CD6; /* 파란색 */
+//   font-weight: bold;
+// }
+
+// /* 문자열 ("..." 또는 '...') */
+// pre .string {
+//   color: #CE9178; /* 주황색 */
+// }
+
+// /* 숫자 (정수 및 소수) */
+// pre .number {
+//   color: #B5CEA8; /* 연한 녹색 */
+// }
+
+// /* 주석 (#으로 시작하는 텍스트) */
+// pre .comment {
+//   color: #6A9955; /* 녹색 */
+//   font-style: italic;
+// }
+
+// /* 클래스 이름 */
+// pre .class {
+//   color: #4EC9B0; /* 청록색 */
+//   font-weight: bold;
+// }
+
+// /* 함수 이름 */
+// pre .function {
+//   color: #DCDCAA; /* 연한 노란색 */
+//   font-weight: bold;
+// }
+
+// /* 연산자 */
+// pre .operator {
+//   color: #D4D4D4; /* 기본 텍스트 색상 */
+// }
+
+// /* 변수 및 매개변수 */
+// pre .variable {
+//   color: #9CDCFE; /* 연한 파란색 */
+// }
+
+// /* 불리언, None 등 특별 값 */
+// pre .constant {
+//   color: #569CD6; /* 파란색 */
+//   font-weight: bold;
+// }
+
+// /* 에러 또는 경고 */
+// pre .error {
+//   color: #F44747; /* 빨간색 */
+//   font-weight: bold;
+// }

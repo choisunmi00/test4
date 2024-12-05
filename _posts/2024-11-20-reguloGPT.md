@@ -10,7 +10,7 @@ tags: paper
 [reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/)
 
 ---
-## Background
+## (Background)
 
 - MRP: Molecualr Regulartory Pathways(분자 조절 경로).
 - KG: Knowledge Graph(지식 그래프). 개체, 사건 또는 개념과 같은 실체에 대한 상호 연결된 설명 모음     
@@ -19,7 +19,7 @@ tags: paper
 - ICL: in-context learning.
 - outdegree: 방향성 그래프에서 node로부터 시작하는 고유한 edge.
 
-## 0. Abstract
+## Abstract
 
 - Motivation: MRP에 대한 KG 구축이 현재로선 미미하다.
 - Results: reguloGPT의 문헌에서 생물학적 지식 추출 가능성  
