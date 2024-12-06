@@ -10,14 +10,14 @@ tags: [study, graph theory, GNN]
 - 소셜, 생물학적, 통신, 경제 및 금융, 교통, 생태 네트워크 등에서 응용.
 
 - network model   
-  - Erdős–Rényi random graph model  
-  - Configuration model  
-  - Watts–Strogatz small world model   
-  - Barabási–Albert (BA) preferential attachment model   
-  - Non-linear preferential attachment
-  - Mediation-driven attachment (MDA) model
-  - Fitness model
-  - Exponential random graph models
+  - Erdős–Rényi random graph model (ER model): 확률적 그래프 생성 모델. vertex의 차수는 포아송 분포를 따름. 현실성 부족(낮은 클러스터링 계수).
+  - Configuration model: 사전 정의된 차수 분포 반영. 낮은 클러스터링 계수. 
+  - Watts–Strogatz small world model: 현실 네트워크의 높은 클러스터링 계수와 짧은 평균 길이 반영(Small World 특성). edge의 한쪽 끝점을 확률 p로 무작위로 재배선(Rewiring)하여 무작위성 도입. 균일한 차수 분포, 현실 네트워크의 허브 구조(스케일 프리) 미반영.
+  - Barabási–Albert (BA) preferential attachment model: 실제 네트워크에서 발견되는 스케일 프리 네트워크 특성 반영하여 허브가 자연스럽게 형성. 선호적 연결(기존 vertex의 차수가 클수록 연결될 확률이 높음), 차수 분포가 멱법칙을 따름. 선호적 연결로 형성되지 않는 네트워크에 적용하기 어려움.   
+  - Non-linear preferential attachment: BA 모델의 일반화. 선호적 연결 확률이 비선형 함수로 정의. 적절한 매개변수 선택 필요.
+  - Mediation-driven attachment (MDA) model: vertex 간 연결이 기존 vertex의 중재(mediation)에 기반해 연결. 간접적인 연결 방식을 도입하여 네트워크 구조 다양화. 복잡한 네트워크 구조를 단순화. 
+  - Fitness model: vertex의 내재적 피트니스 값 할당, vertex 간 연결이 피트니스와 차수의 결합 함수에 의해 결정. 허브 형성뿐 아니라, vertex의 개별적 중요성을 모델링. 매개변수 해석이 어려울 수 있음.
+  - Exponential random graph models (ERGM): 그래프의 전역적 특징을 나타나는 매개변수 설정, 특정 확률 분포를 기반으로 그래프 생성. 매개변수 설정과 계산 복잡도 높음.  
 
 # Graph theory    
 - 오일러가 Königsberg Bridge Problem에 대한 풀이를 보이며 처음 제시했다.   
