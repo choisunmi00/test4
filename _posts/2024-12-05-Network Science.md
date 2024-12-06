@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Network science
+title: Network Science
 categories: Network_science
 tags: [study, graph theory, GNN]
 ---
