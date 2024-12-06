@@ -131,22 +131,22 @@ F = c_1 \cdot S_{\text{MSE}} + c_2 \cdot S_{\text{CP}} + c_3 \cdot S_{\text{VGG1
 $$  
 
 - $S$: 유사도 점수, $c$: 계수  
-- $S_(MSE)$: MSE에 기반한 유사도 점수. 여러 대상 이미지에 대한 MSE의 평균  
+- $S_{\text{MSE}}$: $MSE$에 기반한 유사도 점수. 여러 대상 이미지에 대한 $MSE$의 평균  
 
 $$
 S_{\text{MSE}} = \frac{1}{m} \sum_{i=1}^{m} \text{MSE}(X, T(i))
 $$  
 
 - $m$: 타겟의 수  
-- 형태, 타겟 이미지 사이의 MSE  
+- 형태, 타겟 이미지 사이의 $MSE$  
 
 $$
-S_{\text{MSE}} = \frac{1}{m} \sum_{i=1}^{m} \text{MSE}(X, T(i))
-$$  
+\text{MSE}(X, T) = \frac{1}{n} \sum_{j=1}^{n} (X_j - T_j)^2
+$$
 
 - $X$: 형태 이미지, $T$: 타겟 이미지, $n$: 이미지의 픽셀 수  
 
-- $S_(CP)$: 색상 비율에 기반한 유사도 점수. OpenCV의 ```inRange```를 사용해 비율 계산.  
+- $S_{\text{CP}}$: 색상 비율에 기반한 유사도 점수. OpenCV의 ```inRange```를 사용해 비율 계산.  
 
 $$
 pdf(x, \mu, \sigma) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}\right)^2}
@@ -156,13 +156,15 @@ $$
 S_{\text{CP}} = \frac{1}{m} \sum_{i=1}^{m} \frac{1}{pdf(\text{CP}(X), \text{CP}(T(i)), 0.1)}
 $$  
 
-- *pdf*: probability density function of normal distribution, CP: color proportion  
+- *pdf*: probability density function of normal distribution, $CP$: color proportion  
 
-- $S_(VGG16)$: VGG16 perceptual loss에 기반한 유사도 점수. VGG16 perceptual loss를 형태, 타겟 이미지 feature maps 사이의 LAE 혹은 L1 loss로 정의  
+- $S_{\text{VGG16}}$: VGG16 perceptual loss에 기반한 유사도 점수. $VGG16$ perceptual loss를 형태, 타겟 이미지 feature maps 사이의 $LAE$ 혹은 $L1$ loss로 정의  
 
 $$
-S_{\text{VGG16}} = \frac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{4} \text{L1-loss} \left( \phi_j(X) - \phi_j(T(i)) \right),
+S_{\text{VGG16}} = \frac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{4} \text{L1-loss} \left( \phi_j(X) - \phi_j(T(i)) \right)
 $$  
+
+- $S_{\text{LPIPS}}$: learned perceptual image patch similarity(LPIPS)을 기반으로 하여 S_{\text{VGG16}}와 유사
 
 - 4개의 붉은 반점이 있는 spectabilis(반점 사이의 간격이 다소 좁다)와 가장 유사한 morph-3의 경우, 3개의 합성 신경망을 갖춘 LPIPS 지표가 유사성을 정확히 설명  
 
@@ -187,8 +189,7 @@ $$
 
 - 유전자 교배 실험은 *H. axyridis*의 날개 색상 패턴이 단일 상염색체에서 분리되는 다양한 대립유전자에서 유래함을 입증  
 - ‘mosaic dominance’ phenomena: 이형접합체의 색상 패턴은 두 대립유전자의 색상 패턴의 조합   
-- *H. axyridis*의 색상 패턴 다형성의 근원은 repeated inversion within a
-*pannier* intron.  
+- *H. axyridis*의 색상 패턴 다형성의 근원은 repeated inversion within a *pannier* intron.   
 - Diploid models of *H. axyridis* in LPF   
 
 <img src="https://github.com/user-attachments/assets/541a998f-4b89-44eb-b6fb-e725c52fed78" width="40%" height="40%"/>       
