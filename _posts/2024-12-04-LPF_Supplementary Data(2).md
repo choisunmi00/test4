@@ -1,6 +1,6 @@
 ---
 layout: single
-title: LPF_Supplenetary Data(2)
+title: LPF_Supplementary Data(2)
 categories: LPF
 tags: paper
 ---
