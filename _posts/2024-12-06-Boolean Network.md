@@ -1,8 +1,8 @@
 ---
 layout: single
 title: Boolean Network
-categories: Network science
-tags: [study, graph theory, GNN]
+categories: Network_science
+tags: BN
 ---
 
 # Boolean network  
