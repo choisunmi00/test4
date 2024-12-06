@@ -164,9 +164,9 @@ $$
 S_{\text{VGG16}} = \frac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{4} \text{L1-loss} \left( \phi_j(X) - \phi_j(T(i)) \right)
 $$  
 
-- $S_{\text{LPIPS}}$: learned perceptual image patch similarity(LPIPS)을 기반으로 하여 S_{\text{VGG16}}와 유사
+- $S_{\text{LPIPS}}$: learned perceptual image patch similarity(LPIPS)을 기반으로 하여 $S_{\text{VGG16}}$와 유사
 
-- 4개의 붉은 반점이 있는 spectabilis(반점 사이의 간격이 다소 좁다)와 가장 유사한 morph-3의 경우, 3개의 합성 신경망을 갖춘 LPIPS 지표가 유사성을 정확히 설명  
+- 4개의 붉은 반점이 있는 spectabilis(반점 사이의 간격이 다소 좁다)와 가장 유사한 morph-3의 경우, 3개의 합성 신경망을 갖춘 $LPIPS$ 지표가 유사성을 정확히 설명  
 
 ### 4.3 Results of a case study: reproducing schematic images  
 - *H. axyridis*의 succinea subtype 조사   
