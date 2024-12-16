@@ -14,8 +14,3 @@ tags: BN
   2__ Periodic state: 일정 주기마다 상태가 반복되는 경우. periodic stabilization이라고도 부른다. Fixed point 보다 더 복잡한 동적 특성을 가질 수 있다.  
   3__ Chaotic state: 안정화된 상태를 찾기가 어려운 경우.  
 - [Concepts in Boolean network modeling: What do they all mean?](https://doi.org/10.1016/j.csbj.2020.03.001) 
-
-#
-```
-
-```
