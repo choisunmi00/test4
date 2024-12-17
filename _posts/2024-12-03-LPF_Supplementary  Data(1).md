@@ -36,11 +36,11 @@ tags: paper
 - 2D 공간에서의 RD 시스템
 - ``width``, ``height``: detirmined the size of 2D space
 
-<img src="https://github.com/user-attachments/assets/47faa67a-4249-485a-a40e-19c3f86a420a" width="40%" height="40%"/>   
+<img src="https://github.com/user-attachments/assets/47faa67a-4249-485a-a40e-19c3f86a420a" alt="1" width="40%" height="40%"/>   
 
 - ``dx``: determines both sapce step sizes of the SD cartesian space (∆x = ∆y)   
  
-<img src="https://github.com/user-attachments/assets/ddd9ae3b-c612-443a-b163-93067ec55bd7" width="60%" height="60%"/> 
+<img src="https://github.com/user-attachments/assets/ddd9ae3b-c612-443a-b163-93067ec55bd7" alt="2" width="60%" height="60%"/> 
 
 - ```os.makedirs```: output directory 경로 정의. timestamp 기반 생성
 
@@ -267,7 +267,7 @@ img_ladybirds.save(pjoin(dpath_output, "output_ladybird.png"))
 - CPU 단일 코어에서 100개의 매개변수 집합 결과를 얻는 데 약 3-5시간  
 - CuPy를 사용하여 GPU 컴퓨팅  
 
-<img src="https://github.com/user-attachments/assets/b4facf60-e777-487b-805b-8f50631cd932" width="60%" height="60%"/>    
+<img src="https://github.com/user-attachments/assets/b4facf60-e777-487b-805b-8f50631cd932" alt="3" width="60%" height="60%"/>    
 
 - Euler-GPU 성능이 대체로 가장 좋으며, File I/O이 없어야 GPU 컴퓨팅의 의미가 있다.  
 

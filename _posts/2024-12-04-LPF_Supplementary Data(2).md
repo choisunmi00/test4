@@ -19,7 +19,7 @@ tags: paper
 ### 3.1 Visualizing a single morph  
 - 무당벌레의 날개 색상 패턴은 대칭적이라 가정(생물학적 시스템의 대칭성과 모듈성)   
 
-<img src="https://github.com/user-attachments/assets/dfea6281-2407-4f47-b4a4-e0c9c7725d49" width="40%" height="40%"/>    
+<img src="https://github.com/user-attachments/assets/dfea6281-2407-4f47-b4a4-e0c9c7725d49" alt="1" width="40%" height="40%"/>    
 
 1. PDE 모델을 풀고, 주요 상태에 따라 2D 공간 채색: Liaw 모델에서 멜라닌 합성을 결정하는 주요 상태를 상태 u라고 가정한다면, 임계값보다 큰 상태의 u가 있는 위치에 멜라닌을 나타내는 검은색을 할당한다.  
 2. 패턴 이미지에서 미리 정의된 영역을 잘라내어 날개 색상 패턴 추출  
@@ -51,7 +51,7 @@ img_output.save("morphs.png", dpi=(600, 600))
 - ```models``` directory: contains model JSON files that include metadata, parameter, values, initializing positions
 - ```model_*``` directory: contains the ladybird images of each model generated during the numerical simulation
 
-<img src="https://github.com/user-attachments/assets/a6104125-9ea4-4ed4-b8cf-0020cbb48524" width="60%" height="60%"/>   
+<img src="https://github.com/user-attachments/assets/a6104125-9ea4-4ed4-b8cf-0020cbb48524" alt="2" width="60%" height="60%"/>   
 
 - ```merge multiple timeseries```: concatenates multiple morph images into a frame and performs the concatenation over time. ```model_*``` directory에 있는 동일한 파일 이름을 가진 여러 이미지 파일을 단일 이미지로 병합.
 - ```create video```: 프레임 병합, MP4 비디오 생성.
@@ -61,7 +61,7 @@ img_output.save("morphs.png", dpi=(600, 600))
 - PyGMO에 기반한 진화 탐색 알고리즘 제공  
 - A workflow of searching mathematical models for *H. axyridis*  
 
-<img src="https://github.com/user-attachments/assets/aaf1c378-8744-4a63-9c07-5f9b85454adb" width="60%" height="60%"/>   
+<img src="https://github.com/user-attachments/assets/aaf1c378-8744-4a63-9c07-5f9b85454adb" alt="3" width="60%" height="60%"/>   
 
 ### 4.1 Parameter optimization  
 
@@ -173,7 +173,7 @@ $$
 - Fitness score를 결정하는 방정식에서 계수를 설정하여 지표(유사도 점수에 대한)의 크기와 중요도 조정.   
 - schematic images 제작  
 
-<img src="https://github.com/user-attachments/assets/d63d46c1-6184-400f-90c2-b5416ff9779a" width="40%" height="40%"/>   
+<img src="https://github.com/user-attachments/assets/d63d46c1-6184-400f-90c2-b5416ff9779a" alt="4" width="40%" height="40%"/>   
 
 - axyridis, succinea 형에 대한 진화 탐색: 개체군 최대 크기인 16에 도달했을 때 세대를 거치며 전체가 검은색인 형태는 사라져감. axyridis의 200번째 세대와 succinea의 500번째 세대에서 타겟 이미지와 유사한 형태가 나왔으나 패턴이 완벽하게 일치하지 않음.  
 - conspicua, spectabilis 형에 대한 진화 탐색: 초기 개체군의 매개변수 집합을 이전에 평가된 것으로 사용. 비교적 더 단순한 패턴이므로 800번째 세대에서 타겟과 유사한 형태로 채워짐. 이는 LPF에서 딥러닝 모델이 평가한 fitness score를 기반으로 진화 탐색을 수행했을 때, 타겟 이미지와 유사한 무당벌레의 날개 색상 패턴을 생성할 수 있는 수학적 모델의 매개변수 집합을 찾을 수 있음을 시사함.  
@@ -181,7 +181,7 @@ $$
 ### 4.4 Results of a case study: reproducting real images  
 - *H. axyridis*의 spectabilis subtype 진화 탐색 수행. 타겟은 연구실에서 촬영한 비대칭 패턴의 노이즈가 있는 spectabilis 사진.  
 
-<img src="https://github.com/user-attachments/assets/425c7381-9a2b-426f-85ce-e92d53ce334d" width="40%" height="40%"/>   
+<img src="https://github.com/user-attachments/assets/425c7381-9a2b-426f-85ce-e92d53ce334d" alt="5" width="40%" height="40%"/>   
 
 - 300번째 세대에서 유사한 형태 관찰. 이는 LPF를 통해 실제 이미지를 재현할 수 있는 수학적 모델을 발견할 수 있음을 시사. 다만 노이즈가 많고 비대칭 패턴은 수치적 오류를 일으킬 수 있음.
 
@@ -192,7 +192,7 @@ $$
 - *H. axyridis*의 색상 패턴 다형성의 근원은 repeated inversion within a *pannier* intron.   
 - Diploid models of *H. axyridis* in LPF   
 
-<img src="https://github.com/user-attachments/assets/541a998f-4b89-44eb-b6fb-e725c52fed78" width="40%" height="40%"/>       
+<img src="https://github.com/user-attachments/assets/541a998f-4b89-44eb-b6fb-e725c52fed78" alt="6" width="40%" height="40%"/>       
 
 - 유전적 특징을 반영하기 위해 diploid models 개발. *pannier*의 발현이 부계와 모계 대립유전자에서 발현되는 가상의 형태발생인자에 의해 조절된다 가정. 또한 $u$와 $v$ 사이의 crosstalks 고려.  
 - two-component system에서 PDE 모델 정의  
@@ -241,20 +241,20 @@ $$
 
 - *H. axyridis*의 succinea와 conspicua 모델을 교차시킨 시뮬레이션 실험 수행. crosstalks가 없는 diploid model은 mosaic dominance phenomena가 나타남. 반면 crosstalks가 있는 모델의 색상 패턴은 그렇지 않음. *pannier*를 더 잘 이해하기 위해 LPF의 diploid model은 무당벌레 다형성의 기본 메커니즘에 대한 다양한 가설을 테스트하는데 유용할 것으로 기대.  
 
-<img src="https://github.com/user-attachments/assets/5b73fcb1-2904-460a-8391-0ab4a71c12b6" width="40%" height="40%"/>     
+<img src="https://github.com/user-attachments/assets/5b73fcb1-2904-460a-8391-0ab4a71c12b6" alt="7" width="40%" height="40%"/>     
 
 ### 5.2 Population evolution
 
 - 단순화를 위해 단일 매개변수, 초기 상태 및 diploid model의 반수체 모델 간의 초기화 위치에서 무작위로 발생할 수 있는 *in silico* crossover 구현.  
 
-<img src="https://github.com/user-attachments/assets/973eb106-98e3-4ae1-9ce6-1ef1976a3cc2" width="60%" height="60%"/>     
+<img src="https://github.com/user-attachments/assets/973eb106-98e3-4ae1-9ce6-1ef1976a3cc2" alt="8" width="60%" height="60%"/>     
 
 - An example of evolving a diploid population by crossing.  
 [evopop_liawmodel](https://github.com/cxinsys/lpf/blob/main/search/evopop_liawmodel.py)   
 
-<img src="https://github.com/user-attachments/assets/9913f2b4-55fd-4808-9b8e-ee19fb3b9db6" width="50%" height="50%"/>   
+<img src="https://github.com/user-attachments/assets/9913f2b4-55fd-4808-9b8e-ee19fb3b9db6" alt="9" width="50%" height="50%"/>   
 
-<img src="https://github.com/user-attachments/assets/eeba9d2f-75a6-45cd-8832-357e2f11ecd8" width="50%" height="50%"/>   
+<img src="https://github.com/user-attachments/assets/eeba9d2f-75a6-45cd-8832-357e2f11ecd8" alt="10" width="50%" height="50%"/>   
 
 - 초기 세대에서는 모두 mosaic dominance를 볼 수 있다. 두 개의 같은 실험에서 나온 개체군 진화의 결과라 하더라도 최종 개체군은 무작위 선택과 교차로 인해 완전히 달라진다. 또 몇 가지 형태가 세대를 거쳐 개체군을 지배하기도 하는데 이는  일종의 genetic drift를 시사한다.   
 
